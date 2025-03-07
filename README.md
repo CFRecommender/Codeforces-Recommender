@@ -49,4 +49,9 @@
 ### [sorting.py](https://github.com/CFRecommender/Codeforces-Recommender/blob/main/sorting.py)
 預測並產生推薦順序。
 
+## Chrome 插件前端檔案
+
+### [CodeforcesRecommender](https://github.com/CFRecommender/Codeforces-Recommender/tree/main/CodeforcesRecommender)
+Chrome 插件介面的未封裝檔
+
 向其中的 `sort_pb()` 傳入使用者 Handle 與題目列表，會利用模型預測該使用者通過列表中的題目後各自的 Rating 變化，並回傳推薦順序 (依預測結果排序)。
