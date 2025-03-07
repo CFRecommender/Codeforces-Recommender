@@ -263,17 +263,3 @@ def sort_pb(user,problemset):
     return sorted(problemset, key = lambda prob:-result[prob])
 
 
-'''
-start_time = datetime.now()
-pbs = ['Game of Mathletes','Bugged Sort','Multiplicative Arrays','Graph Composition','Subtract Min Sort','Farmer John\'s Card Game']
-#temp = sorting('Jayanth1278',)
-#for pb in pbs:
-    #temp = sorting('Jayanth1278',['Bugged Sort'])
-    #print(temp)
-temp = sorting('Jayanth1278',pbs)
-#print(temp)
-#temp = sorting('Jayanth1278',['Game of Mathletes' for _ in range(1000)])
-print(temp)
-end_time = datetime.now()
-print(end_time-start_time)
-'''
