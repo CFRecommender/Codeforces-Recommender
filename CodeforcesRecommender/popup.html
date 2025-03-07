@@ -1,0 +1,112 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codeforces Problem Recommender</title>
+    <style>
+      body {
+        width: 300px;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+      }
+      input[type="text"],
+      button {
+        width: 100%;
+        margin-top: 10px;
+        padding: 4px;
+      }
+      select {
+        display: block; /* Ensure it's visible */
+        width: 300px; /* Adjust width if needed */
+        margin-top: 10px; /* Adjust spacing */
+        font-size: 16px;
+        gap: 3px;
+      }
+      label {
+        display: inline-block;
+        width: 120px; /* Adjust as needed */
+        font-size: 18px;
+      }
+      .radio-group {
+        display: flex;
+        align-items: center;
+        gap: 8px; /* Space between radio and label */
+        max-width: 300px;
+      }
+      p {
+        font-size: 18px;
+        margin-bottom: 0;
+      }
+      h3 {
+        font-size: 20px;
+      }
+      [data-tag="problem"] {
+        font-size: 16;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Codeforces Problem Recommender</h3>
+    <input type="text" id="handle" placeholder="Enter Codeforces Handle" />
+
+    <select id="problemTag">
+      <option value="all">all</option>
+      <option value="2-sat">2-sat</option>
+      <option value="binary search">binary search</option>
+      <option value="bitmasks">bitmasks</option>
+      <option value="brute force">brute force</option>
+      <option value="chinese remainder theorem">chinese remainder theorem</option>
+      <option value="combinatorics">combinatorics</option>
+      <option value="constructive algorithms">constructive algorithms</option>
+      <option value="data structures">data structures</option>
+      <option value="dfs and similar">dfs and similar</option>
+      <option value="divide and conquer">divide and conquer</option>
+      <option value="dp">dp</option>
+      <option value="dsu">dsu</option>
+      <option value="expression parsing">expression parsing</option>
+      <option value="fft">fft</option>
+      <option value="flows">flows</option>
+      <option value="games">games</option>
+      <option value="geometry">geometry</option>
+      <option value="graph matchings">graph matchings</option>
+      <option value="graphs">graphs</option>
+      <option value="greedy">greedy</option>
+      <option value="hashing">hashing</option>
+      <option value="implementation">implementation</option>
+      <option value="interactive">interactive</option>
+      <option value="math">math</option>
+      <option value="matrices">matrices</option>
+      <option value="meet-in-the-middle">meet-in-the-middle</option>
+      <option value="number theory">number theory</option>
+      <option value="probabilities">probabilities</option>
+      <option value="schedules">schedules</option>
+      <option value="shortest paths">shortest paths</option>
+      <option value="sortings">sortings</option>
+      <option value="string suffix structures">string suffix structures</option>
+      <option value="strings">strings</option>
+      <option value="ternary search">ternary search</option>
+      <option value="trees">trees</option>
+      <option value="two pointers">two pointers</option>
+    </select>
+
+    <p>Problem Difficulty</p>
+    <label><input type="radio" name="difficulty" value="Easy" /> Easy</label
+    ><br />
+    <label><input type="radio" name="difficulty" value="Medium" /> Medium</label
+    ><br />
+    <label><input type="radio" name="difficulty" value="Hard" /> Hard</label
+    ><br />
+
+    <button id="sendRequest">Send</button>
+
+    <div id="message"></div>
+    <div data-tag="problem" id="problem1"></div>
+    <div data-tag="problem" id="problem2"></div>
+    <div data-tag="problem" id="problem3"></div>
+    <div data-tag="problem" id="problem4"></div>
+    <div data-tag="problem" id="problem5"></div>
+
+    <!-- Link external JavaScript file -->
+    <script src="popup.js"></script>
+  </body>
+</html>
